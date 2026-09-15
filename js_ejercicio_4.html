@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ejercicio 4: Filtro de Búsqueda en Tiempo Real - JavaScript" />
+  <title>Ejercicio 4: Filtro de Búsqueda | ConquerBlocks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__content">
+      <a href="./index.html" class="btn btn--back" id="btn-volver">
+        &larr; Volver al catálogo
+      </a>
+      <span class="badge badge--events">Tiempo Real</span>
+    </div>
+  </header>
+
+  <main class="container container--narrow">
+    <section class="exercise-layout">
+      <article class="exercise-card">
+        <header class="exercise-card__header">
+          <div class="exercise-card__title-group">
+            <span class="exercise-card__number">#04</span>
+            <h1 class="exercise-card__title">Filtro de Búsqueda en Tiempo Real</h1>
+          </div>
+        </header>
+
+        <div class="exercise-card__objective">
+          <strong>Objetivo:</strong> Filtrar interactivamente una lista predefinida a medida que el usuario escribe en el campo de texto, utilizando el evento <code>input</code>.
+        </div>
+
+        <div class="exercise-card__workspace" style="align-items: stretch; justify-content: flex-start;">
+          <!-- Barra de Búsqueda -->
+          <div class="form-group" style="margin-bottom: 1.25rem;">
+            <label for="input-busqueda" class="form-label">Escribe para filtrar elementos:</label>
+            <input 
+              type="text" 
+              id="input-busqueda" 
+              class="input" 
+              placeholder="Escribe para filtrar (ej. Perro, Gato, León)..." 
+              autocomplete="off"
+            />
+          </div>
+
+          <!-- Metadatos de búsqueda -->
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <span id="contador-resultados" class="text-muted" style="font-size: 0.875rem;">Mostrando todos los elementos</span>
+            <button type="button" id="btn-limpiar" class="btn btn--secondary btn--sm" style="display: none;">Limpiar filtro</button>
+          </div>
+
+          <!-- Mensaje sin resultados -->
+          <p id="sin-coincidencias" class="text-muted" style="display: none; text-align: center; padding: 2rem 0;">
+            No se encontraron elementos que coincidan con la búsqueda.
+          </p>
+
+          <!-- Lista de Elementos -->
+          <ul id="lista-elementos" style="display: flex; flex-direction: column; gap: 0.5rem; width: 100%;"></ul>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <script type="module" src="/src/main.js"></script>
+  <script type="module" src="./js_ejercicio4.js"></script>
+</body>
+</html>

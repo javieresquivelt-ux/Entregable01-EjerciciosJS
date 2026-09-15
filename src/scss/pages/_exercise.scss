@@ -1,0 +1,72 @@
+// ==========================================
+// PAGES: VISTA GENERAL DE EJERCICIO
+// ==========================================
+@use '../abstracts' as a;
+
+.exercise-layout {
+  padding: 2.5rem 0 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.exercise-card {
+  @include a.glass-card;
+  padding: 2rem;
+  position: relative;
+
+  &__header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid a.$border-color;
+  }
+
+  &__title-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__number {
+    font-family: a.$font-mono;
+    background: rgba(99, 102, 241, 0.15);
+    color: a.$primary;
+    border: 1px solid rgba(99, 102, 241, 0.3);
+    padding: 0.25rem 0.6rem;
+    border-radius: a.$radius-sm;
+    font-size: 0.85rem;
+    font-weight: 700;
+  }
+
+  &__title {
+    font-size: 1.6rem;
+  }
+
+  &__objective {
+    background-color: rgba(15, 23, 42, 0.4);
+    border-left: 3px solid a.$primary;
+    padding: 0.85rem 1.25rem;
+    border-radius: 0 a.$radius-sm a.$radius-sm 0;
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+    color: a.$text-secondary;
+  }
+
+  &__workspace {
+    background-color: rgba(15, 23, 42, 0.5);
+    border: 1px dashed a.$border-color;
+    border-radius: a.$radius-md;
+    padding: 2rem;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+}

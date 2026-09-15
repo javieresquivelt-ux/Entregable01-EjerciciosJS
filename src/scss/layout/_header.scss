@@ -1,0 +1,48 @@
+// ==========================================
+// LAYOUT: ENCABEZADO / NAVBAR
+// ==========================================
+@use '../abstracts' as a;
+
+.header {
+  border-bottom: 1px solid a.$border-color;
+  background-color: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(12px);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+  }
+
+  &__brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  &__logo-badge {
+    background: linear-gradient(135deg, a.$primary, a.$accent);
+    color: #ffffff;
+    font-family: a.$font-mono;
+    font-weight: 800;
+    font-size: 0.85rem;
+    padding: 0.35rem 0.6rem;
+    border-radius: a.$radius-sm;
+    letter-spacing: 1px;
+  }
+
+  &__title {
+    font-size: 1.15rem;
+    font-weight: 700;
+  }
+
+  &__meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+}

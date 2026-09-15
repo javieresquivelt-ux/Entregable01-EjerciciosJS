@@ -1,0 +1,19 @@
+// ==========================================
+// LAYOUT: CONTENEDOR RESPONSIVO
+// ==========================================
+@use '../abstracts' as a;
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+
+  @include a.breakpoint(tablet) {
+    padding: 0 2rem;
+  }
+
+  &--narrow {
+    max-width: 800px;
+  }
+}

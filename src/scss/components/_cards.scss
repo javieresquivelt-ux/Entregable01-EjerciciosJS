@@ -1,0 +1,85 @@
+// ==========================================
+// COMPONENTS: TARJETAS (CARDS)
+// ==========================================
+@use '../abstracts' as a;
+
+.card {
+  @include a.glass-card;
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+
+  &__number {
+    font-family: a.$font-mono;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: a.$primary;
+    background-color: rgba(99, 102, 241, 0.12);
+    padding: 0.25rem 0.6rem;
+    border-radius: a.$radius-full;
+    border: 1px solid rgba(99, 102, 241, 0.25);
+  }
+
+  &__title {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    color: a.$text-primary;
+    transition: color a.$transition-fast;
+  }
+
+  &__description {
+    font-size: 0.925rem;
+    color: a.$text-secondary;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+    line-height: 1.5;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto;
+    padding-top: 1rem;
+    border-top: 1px solid a.$border-color;
+  }
+
+  // Tarjeta interactiva con efecto hover
+  &--interactive {
+    cursor: pointer;
+
+    &:hover {
+      transform: translateY(-6px);
+      border-color: a.$border-highlight;
+      box-shadow: a.$shadow-lg, a.$shadow-glow;
+
+      .card__title {
+        color: #ffffff;
+      }
+
+      .card__action {
+        color: a.$primary;
+        transform: translateX(4px);
+      }
+    }
+  }
+
+  &__action {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: a.$text-muted;
+    transition: all a.$transition-fast;
+  }
+}

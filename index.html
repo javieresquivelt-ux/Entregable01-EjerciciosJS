@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Entrega de ejercicios prácticos de JavaScript - ConquerBlocks Fullstack" />
+  <title>JavaScript - Entrega de Ejercicios 1 | ConquerBlocks</title>
+
+  <!-- Google Fonts: Outfit (Titulares) e Inter (Cuerpo) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Encabezado Principal / Navbar -->
+  <header class="header">
+    <div class="container header__content">
+      <div class="header__brand">
+        <span class="header__logo-badge">JS</span>
+        <span class="header__title">ConquerBlocks <span class="text-muted">• Entrega 1</span></span>
+      </div>
+      <div class="header__meta">
+        <span class="badge badge--dom">Vanilla JavaScript</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contenido Central -->
+  <main class="container">
+    <!-- Hero / Presentación -->
+    <section class="home-hero">
+      <div class="home-hero__tag">
+        <span>🚀 Módulo Práctico de Frontend</span>
+      </div>
+      <h1 class="home-hero__title">Catálogo de <span class="text-gradient">Ejercicios JavaScript</span></h1>
+      <p class="home-hero__subtitle">
+        Colección de soluciones interactivas implementadas con JavaScript moderno (ES6+), manipulación del DOM, asincronía, eventos y persistencia en LocalStorage.
+      </p>
+    </section>
+
+    <!-- Grid de Ejercicios -->
+    <section class="exercises-section" aria-label="Listado de ejercicios">
+      <div class="exercises-grid">
+
+        <!-- Ejercicio 1 -->
+        <article class="card card--interactive" onclick="location.href='./js_ejercicio_1.html'" tabindex="0" role="link" aria-label="Ir a Ejercicio 1: Cambiador de Color de Fondo">
+          <div class="card__header">
+            <span class="card__number">#01</span>
+            <span class="badge badge--dom">DOM & Estilos</span>
+          </div>
+          <h2 class="card__title">Cambiador de Color</h2>
+          <p class="card__description">
+            Generación y aplicación dinámica de colores aleatorios sobre los estilos del fondo del documento mediante manipulación del DOM.
+          </p>
+          <div class="card__footer">
+            <span class="card__action">Ver solución &rarr;</span>
+          </div>
+        </article>
+
+        <!-- Ejercicio 2 -->
+        <article class="card card--interactive" onclick="location.href='./js_ejercicio_2.html'" tabindex="0" role="link" aria-label="Ir a Ejercicio 2: Contador de Clics">
+          <div class="card__header">
+            <span class="card__number">#02</span>
+            <span class="badge badge--events">Eventos</span>
+          </div>
+          <h2 class="card__title">Contador de Clics</h2>
+          <p class="card__description">
+            Gestión de eventos de interacción de usuario (`addEventListener`) y renderizado reactivo del contador en el DOM.
+          </p>
+          <div class="card__footer">
+            <span class="card__action">Ver solución &rarr;</span>
+          </div>
+        </article>
+
+        <!-- Ejercicio 3 -->
+        <article class="card card--interactive" onclick="location.href='./js_ejercicio_3.html'" tabindex="0" role="link" aria-label="Ir a Ejercicio 3: Lista Dinámica">
+          <div class="card__header">
+            <span class="card__number">#03</span>
+            <span class="badge badge--dom">Nodos DOM</span>
+          </div>
+          <h2 class="card__title">Lista Dinámica</h2>
+          <p class="card__description">
+            Inserción y eliminación dinámica de nodos en el árbol DOM mediante `createElement`, `appendChild` y delegación de eventos.
+          </p>
+          <div class="card__footer">
+            <span class="card__action">Ver solución &rarr;</span>
+          </div>
+        </article>
+
+        <!-- Ejercicio 4 -->
+        <article class="card card--interactive" onclick="location.href='./js_ejercicio_4.html'" tabindex="0" role="link" aria-label="Ir a Ejercicio 4: Filtro en Tiempo Real">
+          <div class="card__header">
+            <span class="card__number">#04</span>
+            <span class="badge badge--events">Tiempo Real</span>
+          </div>
+          <h2 class="card__title">Filtro de Búsqueda</h2>
+          <p class="card__description">
+            Filtrado reactivo sobre colecciones en memoria interceptando eventos `input`, normalizando cadenas y actualizando la vista al instante.
+          </p>
+          <div class="card__footer">
+            <span class="card__action">Ver solución &rarr;</span>
+          </div>
+        </article>
+
+        <!-- Ejercicio 5 -->
+        <article class="card card--interactive" onclick="location.href='./js_ejercicio_5.html'" tabindex="0" role="link" aria-label="Ir a Ejercicio 5: Calculadora Sencilla">
+          <div class="card__header">
+            <span class="card__number">#05</span>
+            <span class="badge badge--dom">Formularios</span>
+          </div>
+          <h2 class="card__title">Calculadora Sencilla</h2>
+          <p class="card__description">
+            Operaciones aritméticas esenciales con validación preventiva de valores vacíos, tipos de datos y control de división entre cero.
+          </p>
+          <div class="card__footer">
+            <span class="card__action">Ver solución &rarr;</span>
+          </div>
+        </article>
+
+        <!-- Ejercicio 6 -->
+        <article class="card card--interactive" onclick="location.href='./js_ejercicio_6.html'" tabindex="0" role="link" aria-label="Ir a Ejercicio 6: Temporizador">
+          <div class="card__header">
+            <span class="card__number">#06</span>
+            <span class="badge badge--async">Asincronía</span>
+          </div>
+          <h2 class="card__title">Temporizador Completo</h2>
+          <p class="card__description">
+            Control preciso de intervalos temporales con `setInterval`/`clearInterval`, formateo `00:00:00` y estados de Inicio, Pausa y Reinicio.
+          </p>
+          <div class="card__footer">
+            <span class="card__action">Ver solución &rarr;</span>
+          </div>
+        </article>
+
+        <!-- Ejercicio 7 -->
+        <article class="card card--interactive" onclick="location.href='./js_ejercicio_7.html'" tabindex="0" role="link" aria-label="Ir a Ejercicio 7: Generador de Contraseñas">
+          <div class="card__header">
+            <span class="card__number">#07</span>
+            <span class="badge badge--events">Algoritmos</span>
+          </div>
+          <h2 class="card__title">Generador de Contraseñas</h2>
+          <p class="card__description">
+            Algoritmo de aleatoriedad criptográfica/pseudoaleatoria con combinaciones de caracteres y validación de longitud mínima (≥ 4).
+          </p>
+          <div class="card__footer">
+            <span class="card__action">Ver solución &rarr;</span>
+          </div>
+        </article>
+
+        <!-- Ejercicio 8 -->
+        <article class="card card--interactive" onclick="location.href='./js_ejercicio_8.html'" tabindex="0" role="link" aria-label="Ir a Ejercicio 8: Contador de Palabras y Caracteres">
+          <div class="card__header">
+            <span class="card__number">#08</span>
+            <span class="badge badge--dom">Texto & Regex</span>
+          </div>
+          <h2 class="card__title">Contador de Palabras</h2>
+          <p class="card__description">
+            Procesamiento y conteo simultáneo en tiempo real de palabras y caracteres, excluyendo espacios en blanco y saltos de línea.
+          </p>
+          <div class="card__footer">
+            <span class="card__action">Ver solución &rarr;</span>
+          </div>
+        </article>
+
+        <!-- Ejercicio 9 -->
+        <article class="card card--interactive" onclick="location.href='./js_ejercicio_9.html'" tabindex="0" role="link" aria-label="Ir a Ejercicio 9: Lista de Tareas con LocalStorage">
+          <div class="card__header">
+            <span class="card__number">#09</span>
+            <span class="badge badge--storage">Web Storage</span>
+          </div>
+          <h2 class="card__title">Tareas con LocalStorage</h2>
+          <p class="card__description">
+            Aplicación de tareas con persistencia offline en el navegador, serialización JSON, marcado de estado y limpieza masiva.
+          </p>
+          <div class="card__footer">
+            <span class="card__action">Ver solución &rarr;</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__text">
+        Desarrollo Web Fullstack • <span class="footer__highlight">Entrega de Ejercicios 1</span> • ConquerBlocks
+      </p>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

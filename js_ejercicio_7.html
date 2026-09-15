@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ejercicio 7: Generador de Contraseñas - JavaScript" />
+  <title>Ejercicio 7: Generador de Contraseñas | ConquerBlocks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__content">
+      <a href="./index.html" class="btn btn--back" id="btn-volver">
+        &larr; Volver al catálogo
+      </a>
+      <span class="badge badge--events">Algoritmos & Cadenas</span>
+    </div>
+  </header>
+
+  <main class="container container--narrow">
+    <section class="exercise-layout">
+      <article class="exercise-card">
+        <header class="exercise-card__header">
+          <div class="exercise-card__title-group">
+            <span class="exercise-card__number">#07</span>
+            <h1 class="exercise-card__title">Generador de Contraseñas</h1>
+          </div>
+        </header>
+
+        <div class="exercise-card__objective">
+          <strong>Objetivo:</strong> Generar cadenas seguras aleatorias con letras, números y símbolos, validando que la longitud solicitada sea mayor o igual a 4.
+        </div>
+
+        <div class="exercise-card__workspace" style="align-items: stretch;">
+          <!-- Configuración de Longitud -->
+          <div class="form-group" style="margin-bottom: 1rem;">
+            <label for="input-longitud" class="form-label">Longitud de la contraseña (mínimo 4):</label>
+            <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+              <input 
+                type="number" 
+                id="input-longitud" 
+                class="input" 
+                value="12" 
+                min="1" 
+                max="64"
+                style="max-width: 140px;"
+              />
+              <button type="button" id="btn-generar" class="btn btn--primary">
+                Generar contraseña
+              </button>
+            </div>
+            <!-- Mensaje de Error -->
+            <p id="mensaje-error-longitud" class="text-danger" style="display: none; font-size: 0.875rem; margin-top: 0.5rem;">
+              La longitud debe ser mayor o igual a 4.
+            </p>
+          </div>
+
+          <!-- Display de Contraseña -->
+          <div style="background: rgba(0, 0, 0, 0.35); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 1.25rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; margin-top: 1rem;">
+            <span id="display-password" class="text-mono" style="font-size: 1.25rem; color: #f8fafc; word-break: break-all; font-weight: 600;">
+              Haz clic en "Generar contraseña"
+            </span>
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+              <button type="button" id="btn-copiar-password" class="btn btn--secondary btn--sm" style="display: none;">
+                Copiar
+              </button>
+              <button type="button" id="btn-limpiar-password" class="btn btn--secondary btn--sm" style="display: none;">
+                Limpiar
+              </button>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <script type="module" src="/src/main.js"></script>
+  <script type="module" src="./js_ejercicio7.js"></script>
+</body>
+</html>

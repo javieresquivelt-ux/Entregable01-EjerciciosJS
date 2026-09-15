@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ejercicio 5: Calculadora Sencilla - JavaScript" />
+  <title>Ejercicio 5: Calculadora Sencilla | ConquerBlocks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__content">
+      <a href="./index.html" class="btn btn--back" id="btn-volver">
+        &larr; Volver al catálogo
+      </a>
+      <span class="badge badge--dom">Formularios</span>
+    </div>
+  </header>
+
+  <main class="container container--narrow">
+    <section class="exercise-layout">
+      <article class="exercise-card">
+        <header class="exercise-card__header">
+          <div class="exercise-card__title-group">
+            <span class="exercise-card__number">#05</span>
+            <h1 class="exercise-card__title">Calculadora Sencilla</h1>
+          </div>
+        </header>
+
+        <div class="exercise-card__objective">
+          <strong>Objetivo:</strong> Implementar cuatro operaciones aritméticas básicas validando entradas numéricas vacías y evitando la indeterminación matemática por división entre cero.
+        </div>
+
+        <div class="exercise-card__workspace" style="align-items: stretch;">
+          <!-- Entradas numéricas -->
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem;">
+            <div class="form-group" style="margin-bottom: 0;">
+              <label for="num1" class="form-label">Primer número:</label>
+              <input type="number" id="num1" class="input" placeholder="Ej. 10" step="any" />
+            </div>
+            <div class="form-group" style="margin-bottom: 0;">
+              <label for="num2" class="form-label">Segundo número:</label>
+              <input type="number" id="num2" class="input" placeholder="Ej. 5" step="any" />
+            </div>
+          </div>
+
+          <!-- Botones de Operaciones -->
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 0.75rem; margin-bottom: 1.75rem;">
+            <button type="button" id="btn-sumar" class="btn btn--primary">Sumar</button>
+            <button type="button" id="btn-restar" class="btn btn--primary">Restar</button>
+            <button type="button" id="btn-multiplicar" class="btn btn--primary">Multiplicar</button>
+            <button type="button" id="btn-dividir" class="btn btn--primary">Dividir</button>
+          </div>
+
+          <!-- Cuadro de Resultado -->
+          <div style="background: rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 1.25rem; text-align: center;">
+            <span class="text-muted" style="font-size: 0.875rem; display: block; margin-bottom: 0.35rem;">Resultado:</span>
+            <p id="resultado-calculadora" class="text-mono" style="font-size: 1.75rem; font-weight: 700; color: #f8fafc; min-height: 2.2rem; display: flex; align-items: center; justify-content: center;">
+              Esperando operación...
+            </p>
+          </div>
+
+          <!-- Acción de limpieza -->
+          <div style="border-top: 1px solid rgba(255, 255, 255, 0.08); margin-top: 1.5rem; padding-top: 1.25rem;">
+            <button type="button" id="btn-limpiar" class="btn btn--secondary" style="width: 100%;">
+              Limpiar campos
+            </button>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <script type="module" src="/src/main.js"></script>
+  <script type="module" src="./js_ejercicio5.js"></script>
+</body>
+</html>

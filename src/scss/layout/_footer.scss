@@ -1,0 +1,22 @@
+// ==========================================
+// LAYOUT: PIE DE PÁGINA (FOOTER)
+// ==========================================
+@use '../abstracts' as a;
+
+.footer {
+  margin-top: auto;
+  border-top: 1px solid a.$border-color;
+  background-color: rgba(15, 23, 42, 0.9);
+  padding: 2rem 0;
+  text-align: center;
+
+  &__text {
+    font-size: 0.875rem;
+    color: a.$text-muted;
+  }
+
+  &__highlight {
+    color: a.$text-secondary;
+    font-weight: 500;
+  }
+}

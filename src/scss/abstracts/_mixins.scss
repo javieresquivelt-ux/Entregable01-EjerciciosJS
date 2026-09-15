@@ -1,0 +1,42 @@
+// ==========================================
+// ABSTRACTS: MIXINS Y UTILIDADES
+// ==========================================
+@use 'variables' as var;
+
+// Sistema de Breakpoints Responsivos
+@mixin breakpoint($point) {
+  @if $point == mobile-sm {
+    @media (max-width: 480px) {
+      @content;
+    }
+  } @else if $point == tablet {
+    @media (min-width: 768px) {
+      @content;
+    }
+  } @else if $point == desktop {
+    @media (min-width: 1024px) {
+      @content;
+    }
+  } @else if $point == desktop-xl {
+    @media (min-width: 1280px) {
+      @content;
+    }
+  }
+}
+
+// Contenedor Flex Centrado
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Estilo de Tarjeta / Panel Glassmorphism
+@mixin glass-card {
+  background-color: var.$bg-surface;
+  border: 1px solid var.$border-color;
+  border-radius: var.$radius-md;
+  box-shadow: var.$shadow-md;
+  backdrop-filter: blur(8px);
+  transition: transform var.$transition-smooth, border-color var.$transition-smooth, box-shadow var.$transition-smooth;
+}
