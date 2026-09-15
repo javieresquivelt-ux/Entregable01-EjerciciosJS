@@ -52,7 +52,7 @@ function obtenerNumeros() {
 // Muestra un mensaje en el área de resultados, en rojo si es un error.
 function mostrarResultado(texto, esError = false) {
   resultadoCalculadora.textContent = texto;
-  resultadoCalculadora.style.color = esError ? '#f43f5e' : '#f8fafc';
+  resultadoCalculadora.style.color = esError ? '#e11d48' : '#0f172a';
 }
 
 /**
@@ -107,7 +107,7 @@ function limpiarCampos() {
   inputNum1.value = '';
   inputNum2.value = '';
   resultadoCalculadora.textContent = 'Esperando operación...';
-  resultadoCalculadora.style.color = '#f8fafc';
+  resultadoCalculadora.style.color = '#0f172a';
   inputNum1.focus();
 }
 

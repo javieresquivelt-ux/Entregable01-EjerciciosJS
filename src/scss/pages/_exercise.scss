@@ -34,9 +34,9 @@
 
   &__number {
     font-family: a.$font-mono;
-    background: rgba(99, 102, 241, 0.15);
+    background: #eef2ff;
     color: a.$primary;
-    border: 1px solid rgba(99, 102, 241, 0.3);
+    border: 1px solid a.$border-highlight;
     padding: 0.25rem 0.6rem;
     border-radius: a.$radius-sm;
     font-size: 0.85rem;
@@ -48,7 +48,7 @@
   }
 
   &__objective {
-    background-color: rgba(15, 23, 42, 0.4);
+    background-color: #f1f5f9;
     border-left: 3px solid a.$primary;
     padding: 0.85rem 1.25rem;
     border-radius: 0 a.$radius-sm a.$radius-sm 0;
@@ -58,8 +58,8 @@
   }
 
   &__workspace {
-    background-color: rgba(15, 23, 42, 0.5);
-    border: 1px dashed a.$border-color;
+    background-color: #f8fafc;
+    border: 1px dashed #cbd5e1;
     border-radius: a.$radius-md;
     padding: 2rem;
     min-height: 250px;

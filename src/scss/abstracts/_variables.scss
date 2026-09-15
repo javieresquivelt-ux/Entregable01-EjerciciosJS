@@ -3,41 +3,41 @@
 // ==========================================
 
 // Tipografías
-$font-title: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+$font-title: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 $font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 $font-mono: 'JetBrains Mono', 'Fira Code', monospace;
 
 // Paleta de Colores
-$bg-primary: #0f172a;       // Slate 900 (Fondo principal)
-$bg-surface: #1e293b;       // Slate 800 (Tarjetas y superficies)
-$bg-surface-hover: #334155; // Slate 700 (Hover en tarjetas)
-$bg-elevated: #1e293b;
+$bg-primary: #f8fafc;       // Slate 50 (Fondo principal)
+$bg-surface: #ffffff;       // Blanco (Tarjetas y superficies)
+$bg-surface-hover: #f1f5f9; // Slate 100 (Hover en tarjetas)
+$bg-elevated: #ffffff;
 
-$text-primary: #f8fafc;     // Slate 50 (Títulos y texto prioritario)
-$text-secondary: #94a3b8;   // Slate 400 (Subtítulos y descripciones)
+$text-primary: #0f172a;     // Slate 900 (Títulos y texto prioritario)
+$text-secondary: #475569;   // Slate 600 (Subtítulos y descripciones)
 $text-muted: #64748b;       // Slate 500 (Metadatos y badges sutiles)
 
 // Colores de Acento y Estado
-$primary: #6366f1;          // Indigo principal
-$primary-hover: #4f46e5;    // Indigo hover
-$accent: #8b5cf6;           // Violeta vibrante
-$cyan: #06b6d4;             // Cian para tags informativos
-$success: #10b981;          // Esmeralda para estados positivos
-$danger: #f43f5e;           // Rosa/Rojo para errores y eliminar
-$warning: #f59e0b;          // Ámbar para alertas o contadores
+$primary: #4f46e5;          // Indigo principal
+$primary-hover: #4338ca;    // Indigo hover
+$accent: #4f46e5;           // Acento único (indigo)
+$cyan: #0891b2;             // Cian para tags informativos
+$success: #059669;          // Esmeralda para estados positivos
+$danger: #e11d48;           // Rosa/Rojo para errores y eliminar
+$warning: #d97706;          // Ámbar para alertas o contadores
 
 // Bordes y Sombras
-$border-color: rgba(255, 255, 255, 0.08);
-$border-highlight: rgba(99, 102, 241, 0.3);
+$border-color: #e2e8f0;
+$border-highlight: #c7d2fe;
 $radius-sm: 8px;
 $radius-md: 12px;
 $radius-lg: 16px;
 $radius-full: 9999px;
 
-$shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.2);
-$shadow-md: 0 8px 24px rgba(0, 0, 0, 0.3);
-$shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.4);
-$shadow-glow: 0 0 25px rgba(99, 102, 241, 0.25);
+$shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.05);
+$shadow-md: 0 4px 12px rgba(15, 23, 42, 0.08);
+$shadow-lg: 0 8px 24px rgba(15, 23, 42, 0.1);
+$shadow-glow: 0 0 0 1px rgba(79, 70, 229, 0.15);
 
 // Transiciones
 $transition-fast: 0.2s ease;

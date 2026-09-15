@@ -35,12 +35,13 @@
 
   // Variantes
   &--primary {
-    background: linear-gradient(135deg, a.$primary, a.$accent);
-    color: a.$text-primary;
-    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.35);
+    background-color: a.$primary;
+    color: #ffffff;
+    border: 1px solid transparent;
 
     &:hover {
-      box-shadow: 0 6px 20px rgba(99, 102, 241, 0.5);
+      background-color: a.$primary-hover;
+      box-shadow: a.$shadow-md;
     }
   }
 
@@ -56,9 +57,9 @@
   }
 
   &--danger {
-    background-color: rgba(244, 63, 94, 0.15);
+    background-color: rgba(225, 29, 72, 0.08);
     color: a.$danger;
-    border: 1px solid rgba(244, 63, 94, 0.3);
+    border: 1px solid rgba(225, 29, 72, 0.25);
 
     &:hover {
       background-color: a.$danger;
@@ -67,9 +68,9 @@
   }
 
   &--success {
-    background-color: rgba(16, 185, 129, 0.15);
+    background-color: rgba(5, 150, 105, 0.08);
     color: a.$success;
-    border: 1px solid rgba(16, 185, 129, 0.3);
+    border: 1px solid rgba(5, 150, 105, 0.25);
 
     &:hover {
       background-color: a.$success;
@@ -83,13 +84,13 @@
     gap: 0.4rem;
     padding: 0.5rem 1rem;
     font-size: 0.875rem;
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: a.$bg-surface;
     border: 1px solid a.$border-color;
     border-radius: a.$radius-full;
     color: a.$text-secondary;
 
     &:hover {
-      background-color: rgba(255, 255, 255, 0.1);
+      background-color: a.$bg-surface-hover;
       color: a.$text-primary;
     }
   }

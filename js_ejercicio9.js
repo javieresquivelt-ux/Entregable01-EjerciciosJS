@@ -62,8 +62,8 @@ function renderizarTareas() {
       display: flex;
       align-items: center;
       gap: 0.75rem;
-      background: rgba(15, 23, 42, 0.5);
-      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
       border-radius: 10px;
       padding: 0.75rem 1rem;
     `;

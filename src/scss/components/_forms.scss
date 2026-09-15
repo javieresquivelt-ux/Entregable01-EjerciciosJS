@@ -19,7 +19,7 @@
 .input {
   width: 100%;
   padding: 0.75rem 1rem;
-  background-color: rgba(15, 23, 42, 0.6);
+  background-color: a.$bg-surface;
   border: 1px solid a.$border-color;
   border-radius: a.$radius-sm;
   color: a.$text-primary;
@@ -32,7 +32,7 @@
 
   &:focus {
     border-color: a.$primary;
-    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
   }
 }
 

@@ -72,21 +72,21 @@ Entregable01/
 ## Secciones del Sitio
 
 ### Header (Encabezado / Navbar)
-- **Fijo (sticky)** en la parte superior (`position: sticky; top: 0; z-index: 50`), con fondo `rgba(15, 23, 42, 0.85)` y **glassmorphism** (`backdrop-filter: blur(12px)`).
-- **Logo-badge "JS"**: píldora con gradiente indigo→violeta, fuente mono y `border-radius` pequeño.
+- **Fijo (sticky)** en la parte superior (`position: sticky; top: 0; z-index: 50`), con fondo semitransparente `rgba(255, 255, 255, 0.85)` y ligero blur (`backdrop-filter: blur(12px)`).
+- **Logo-badge "JS"**: píldora indigo sólido (`#4f46e5`) con texto blanco, fuente mono y `border-radius` pequeño.
 - **Marca**: título "ConquerBlocks • Entrega 1".
 - **Meta-badge** derecho: "Vanilla JavaScript" con la variante `badge--dom`.
 - En las vistas de ejercicio incluye el botón `btn--back` ("← Volver al catálogo", píldora con borde sutil).
 
 ### Hero (Presentación)
-- **Tag superior**: pill con borde indigo translúcido y texto `#a5b4fc` ("🚀 Módulo Práctico de Frontend").
-- **Título `h1`**: peso `800`, con palabras resaltadas en **`text-gradient`** (indigo→violeta vía `background-clip: text`).
+- **Tag superior**: pill con tinte indigo claro y texto `#4f46e5` ("🚀 Módulo Práctico de Frontend").
+- **Título `h1`**: peso `800`, con palabras resaltadas en **indigo sólido** (`#4f46e5`, clase `text-gradient` simplificada a color plano).
 - **Subtítulo**: máximo 650 px centrado, tamaño `1.1rem`, color `text-secondary`.
 
 ### Categorías (Grid de Ejercicios)
 - **Grid responsive** de tarjetas: `1` columna (móvil) → `2` (≥768px) → `3` (≥1024px).
 - Cada `.card--interactive` ofrece: `card__number` (píldora mono #01–#09), **badge de categoría** (`badge--dom`, `badge--events`, `badge--async`, `badge--storage`), título, descripción y CTA "Ver solución →".
-- **Hover**: elevación `translateY(-6px)`, borde resaltado y **glow** (`shadow-lg + shadow-glow`); toda la tarjeta es clickeable (`onclick`) y accesible con `tabindex`/`role=link`.
+- **Hover**: elevación `translateY(-4px)`, borde indigo claro (`#c7d2fe`) y sombra suave (`shadow-lg`); toda la tarjeta es clickeable (`onclick`) y accesible con `tabindex`/`role=link`.
 
 ---
 
@@ -95,7 +95,8 @@ Entregable01/
 - **Vanilla JavaScript (ES6+)** — sin frameworks de UI.
 - **Vite ^8.3.0** — bundler de desarrollo y build.
 - **Dart Sass ^1.104.1** — preprocesamiento modular con `@use` / `@forward`.
-- **Google Fonts** — Outfit, Inter y JetBrains Mono.
+- **Google Fonts** — Inter y JetBrains Mono.
+- **Estética**: tema **claro minimal** — sin gradientes ni glassmorphism, acento único indigo (`#4f46e5`), orientado a evaluar funcionalidad.
 - **Arquitectura MPA** compatible con **GitHub Pages** (`base: './'` + `rollupOptions.input` dinámico con `node:fs`).
 
 ---
@@ -124,19 +125,19 @@ Para probar cada ejercicio en desarrollo, navega a `http://localhost:5173/js_eje
 
 | Token | Color | Propósito |
 |-------|-------|-----------|
-| `$bg-primary` | `#0f172a` | Fondo principal de la aplicación (slate 900) |
-| `$bg-surface` | `#1e293b` | Tarjetas, superficies y panels |
-| `$bg-surface-hover` | `#334155` | Hover sobre tarjetas |
-| `$text-primary` | `#f8fafc` | Títulos y texto prioritario |
-| `$text-secondary` | `#94a3b8` | Subtítulos y descripciones |
+| `$bg-primary` | `#f8fafc` | Fondo principal de la aplicación (claro) |
+| `$bg-surface` | `#ffffff` | Tarjetas, superficies y panels |
+| `$bg-surface-hover` | `#f1f5f9` | Hover sobre tarjetas |
+| `$text-primary` | `#0f172a` | Títulos y texto prioritario |
+| `$text-secondary` | `#475569` | Subtítulos y descripciones |
 | `$text-muted` | `#64748b` | Metadatos y texto secundario |
-| `$primary` | `#6366f1` | Indigo: acento principal (botones, focos, enlaces) |
-| `$primary-hover` | `#4f46e5` | Indigo hover |
-| `$accent` | `#8b5cf6` | Violeta para gradientes y resaltados |
-| `$cyan` | `#06b6d4` | Información / tiempo real |
-| `$success` | `#10b981` | Estados positivos y confirmaciones |
-| `$danger` | `#f43f5e` | Errores, eliminación y reset |
-| `$warning` | `#f59e0b` | Alertas y contadores |
+| `$primary` | `#4f46e5` | Indigo: acento único (botones, focos, enlaces) |
+| `$primary-hover` | `#4338ca` | Indigo hover |
+| `$accent` | `#4f46e5` | Sin violeta: acento único indigo |
+| `$cyan` | `#0891b2` | Información / tiempo real |
+| `$success` | `#059669` | Estados positivos y confirmaciones |
+| `$danger` | `#e11d48` | Errores, eliminación y reset |
+| `$warning` | `#d97706` | Alertas y contadores |
 
 ---
 
@@ -144,8 +145,7 @@ Para probar cada ejercicio en desarrollo, navega a `http://localhost:5173/js_eje
 
 | Familia | Uso | Pesos cargados |
 |---------|-----|----------------|
-| **Outfit** | Titulares (`h1`–`h6`) | 500–800 |
-| **Inter** | Cuerpo y UI (`body`, botones, inputs) | 300–600 |
+| **Inter** | Titulares y cuerpo (`h1`–`h6`, `body`, botones, inputs) | 400–800 |
 | **JetBrains Mono** | Código, números, contraseñas, timers (`.text-mono`) | 500, 700 |
 
 Tamaños principales:

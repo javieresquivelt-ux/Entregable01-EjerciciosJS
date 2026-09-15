@@ -31,12 +31,11 @@
   justify-content: center;
 }
 
-// Estilo de Tarjeta / Panel Glassmorphism
+// Estilo de Tarjeta / Panel (superficie clara)
 @mixin glass-card {
   background-color: var.$bg-surface;
   border: 1px solid var.$border-color;
   border-radius: var.$radius-md;
   box-shadow: var.$shadow-md;
-  backdrop-filter: blur(8px);
   transition: transform var.$transition-smooth, border-color var.$transition-smooth, box-shadow var.$transition-smooth;
 }

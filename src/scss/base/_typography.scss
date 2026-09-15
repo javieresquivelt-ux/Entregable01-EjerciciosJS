@@ -34,9 +34,7 @@ p {
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, a.$primary, a.$accent);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: a.$primary;
 }
 
 .text-mono {

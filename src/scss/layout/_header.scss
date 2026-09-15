@@ -5,7 +5,7 @@
 
 .header {
   border-bottom: 1px solid a.$border-color;
-  background-color: rgba(15, 23, 42, 0.85);
+  background-color: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(12px);
   position: sticky;
   top: 0;
@@ -25,7 +25,7 @@
   }
 
   &__logo-badge {
-    background: linear-gradient(135deg, a.$primary, a.$accent);
+    background-color: a.$primary;
     color: #ffffff;
     font-family: a.$font-mono;
     font-weight: 800;

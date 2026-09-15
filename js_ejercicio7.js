@@ -56,7 +56,7 @@ btnGenerar.addEventListener('click', () => {
     // En estado de error mostramos "Limpiar" para poder resetear.
     btnLimpiarPassword.style.display = 'inline-flex';
     displayPassword.textContent = 'Longitud inválida';
-    displayPassword.style.color = '#f43f5e';
+    displayPassword.style.color = '#e11d48';
     return;
   }
 
@@ -65,7 +65,7 @@ btnGenerar.addEventListener('click', () => {
   passwordActual = generarPassword(longitud);
 
   displayPassword.textContent = passwordActual;
-  displayPassword.style.color = '#f8fafc';
+  displayPassword.style.color = '#0f172a';
   btnCopiarPassword.style.display = 'inline-flex';
   btnLimpiarPassword.style.display = 'inline-flex';
 });
@@ -95,7 +95,7 @@ function limpiarPassword() {
   passwordActual = '';
   inputLongitud.value = '12';
   displayPassword.textContent = 'Haz clic en "Generar contraseña"';
-  displayPassword.style.color = '#f8fafc';
+  displayPassword.style.color = '#0f172a';
   btnCopiarPassword.style.display = 'none';
   btnLimpiarPassword.style.display = 'none';
   mensajeErrorLongitud.style.display = 'none';
