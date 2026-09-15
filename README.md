@@ -1,6 +1,6 @@
 # Entrega de Ejercicios 1 — JavaScript
 
-> Colección de soluciones interactivas en **Vanilla JavaScript (ES6+)** desarrolladas como MPA con **Vite + Sass** para la evaluación del módulo Fullstack de ConquerBlocks.
+> Colección de soluciones interactivas en **Vanilla JavaScript (ES6+)** desarrolladas como MPA (aplicación multipágina) con **Vite + Sass** para la evaluación del módulo Fullstack de ConquerBlocks.
 
 ---
 
@@ -185,4 +185,4 @@ Tamaños principales:
 
 ---
 
-Creado por **Javier Esquivel** · ConquerBlocks · Desarrollo Web Fullstack
+Creado por **Javier Esquivel** · para ConquerBlocks · Desarrollo Web Fullstack
