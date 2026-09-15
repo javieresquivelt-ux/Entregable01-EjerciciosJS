@@ -90,6 +90,14 @@ Entregable01/
 
 ---
 
+## Despliegue
+
+- **URL pública:** https://javieresquivelt-ux.github.io/Entregable01-EjerciciosJS/
+- Publicación automática con **GitHub Actions**: cada `push` a `main` compila el proyecto y lo despliega en GitHub Pages (`.github/workflows/deploy-github-pages.yml`). También puede lanzarse manualmente desde *Actions* → *Deploy GitHub Pages* → *Run workflow*.
+- El código fuente vive en `main`; `dist/` no se versiona (lo genera el workflow).
+
+---
+
 ## Tecnologías
 
 - **Vanilla JavaScript (ES6+)** — sin frameworks de UI.
