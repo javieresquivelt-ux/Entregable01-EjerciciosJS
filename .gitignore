@@ -22,3 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Contexto interno del framework Harness (no se publica)
+agent.md
+memory.md
+task.md
+/instruction/
+/plans/
