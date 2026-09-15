@@ -48,9 +48,6 @@ Entregable01/
 ├── js_ejercicio8.js             # Lógica: Ejercicio 8
 ├── js_ejercicio9.js             # Lógica: Ejercicio 9
 │
-├── plans/                       # 9 planes atómicos de ejecución (contrato UI + JS + DoD)
-│   └── plan_ejercicio_01_color.md ... plan_ejercicio_09_todo_localstorage.md
-│
 ├── src/
 │   ├── main.js                  # Punto de entrada JS de Vite (importa app.scss)
 │   └── scss/
@@ -62,10 +59,6 @@ Entregable01/
 │       └── pages/               # _home.scss y _exercise.scss
 │
 ├── public/                      # Assets estáticos no procesados (favicon, icons)
-├── instruction/                 # Consigna original y prompt del curso
-├── agent.md                     # Definición del agente tutor y metodología
-├── task.md                      # Tablero de tareas (Harness Engineering Framework)
-├── memory.md                    # Bitácora de decisiones técnicas y aprendizajes
 │
 ├── vite.config.js               # Config MPA: base './' + rollupOptions.input dinámico
 ├── package.json
